@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login Page</title>
 
     <link rel="stylesheet" href="login.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -81,11 +81,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="email" name="email" placeholder="Email" required>
             </div>
 
-           <div class="input-box">
-    <input type="password" id="password" placeholder="Password">
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="Password" required>
 
-    <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
-</div>
+                <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+            </div>
 
             <button class="btn" type="submit">Login</button>
 

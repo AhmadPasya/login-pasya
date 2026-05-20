@@ -1,0 +1,137 @@
+/* daftar lowongan */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    background-color: #0a2b4e;
+    padding: 35px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    color: #cce4ff;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* CLASS SELECTOR */
+.judul-utama {
+    color: #1a4d8c;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* ID SELECTOR */
+#filter-section {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #b3d4ff;
+    border-radius: 8px;
+    margin: 0 20px 20px 20px;
+}
+
+#daftar-tabel {
+    background-color: white;
+    border-collapse: collapse;
+    width: 95%;
+    margin: 10px auto;
+}
+
+/* NESTING */
+
+.footer{
+  width:100%;
+  background:#363a42;
+  padding:15px;
+  text-align:center;
+  margin-top:auto;
+}
+
+.footer a{
+  color:#aaa;
+  margin:0 10px;
+  font-size:13px;
+  text-decoration:none;
+}
+
+.footer a:hover{
+  color:#fff;
+}
+
+/* Style link */
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+/* Style untuk tabel */
+table {
+    border: 1px solid #cce4ff;
+    width: 100%;
+}
+
+th {
+    background-color: #1a4d8c;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e0ecf9;
+}
+
+/* Style dropdown */
+select {
+    padding: 8px;
+    border: 1px solid #b3d4ff;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    width: 200px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #b3d4ff;
+    margin: 20px;
+}
+
+/* Tombol detail */
+.btn-detail-disabled {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: default;
+    opacity: 0.6;
+}

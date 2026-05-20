@@ -1,0 +1,129 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+/* Background Utama (Ganti URL gambar dengan gambar kantor/ilustrasi pilihanmu) */
+.hero-section {
+    background: url('background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Kotak Transparan di Tengah */
+.overlay-card {
+    background: rgba(16, 37, 55, 0.85); /* Warna biru tua gelap dengan transparansi */
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    background-color: #2ab5c9;
+    color: white;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 8px 20px 8px 8px;
+    font-size: 20px;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Typography / Tulisan */
+.welcome-title {
+    font-family: 'Great Vibes', cursive; /* Font latin/sambung */
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #e0e6ed;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+/* Tombol Biru */
+.visit-btn {
+    background-color: #29b6cc;
+    color: white;
+    border: none;
+    padding: 14px 45px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(41, 182, 204, 0.4);
+}
+
+/* Efek pas tombol disentuh mouse */
+.visit-btn:hover {
+    background-color: #2194a7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(41, 182, 204, 0.6);
+}
+
+.visit-btn:active {
+    transform: translateY(1px);
+}
+
+/* Responsif untuk HP / Layar Kecil */
+@media (max-width: 768px) {
+    .overlay-card {
+        padding: 25px 20px;
+    }
+    .welcome-title {
+        font-size: 50px;
+    }
+    .sub-title {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 13px;
+    }
+    .visit-btn {
+        font-size: 16px;
+        padding: 12px 35px;
+    }
+}
