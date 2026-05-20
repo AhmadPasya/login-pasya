@@ -1,12 +1,7 @@
 <?php
-$host = "localhost";
-$user = "root"; 
-$pass = "";     
-$db   = "lokerinaja"; 
-
-$conn = mysqli_connect($host, $user, $pass, $db);
+$conn = mysqli_connect("localhost", "root", "", "lowongan_db");
 
 if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+    die("Koneksi gagal");
 }
 ?>
